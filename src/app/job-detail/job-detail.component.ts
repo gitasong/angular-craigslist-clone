@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Listing } from '../listing.model';
-// import { Router } from '@angular/router';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { JobsService } from '../jobs.service';

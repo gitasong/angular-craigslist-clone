@@ -11,6 +11,7 @@ import { JobsComponent } from './jobs/jobs.component';
 import { HousingComponent } from './housing/housing.component';
 import { PersonalsComponent } from './personals/personals.component';
 import { JobDetailComponent } from './job-detail/job-detail.component';
+import { ForSaleDetailComponent } from './for-sale-detail/for-sale-detail.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { JobDetailComponent } from './job-detail/job-detail.component';
     JobsComponent,
     HousingComponent,
     PersonalsComponent,
-    JobDetailComponent
+    JobDetailComponent,
+    ForSaleDetailComponent
   ],
   imports: [
     BrowserModule,
