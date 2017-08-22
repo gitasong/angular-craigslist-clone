@@ -1,4 +1,4 @@
 <h2>Jobs Listings</h2>
-<div *ngFor="let listing of jobs" (click)="goToJobsPage(listing)">
+<div *ngFor="let listing of jobs" (click)="goToJobDetailPage(listing)">
   <p>{{listing.title}} - {{listing.price}} - ({{listing.location}})</p>
 </div>

@@ -11,4 +11,12 @@ export class JobsService {
     return JOBS;
   }
 
+  getJobById(jobId: number){
+    for (var i = 0; i <= JOBS.length - 1; i++) {
+      if (JOBS[i].id === jobId) {
+        return JOBS[i];
+      }
+    }
+  }
+
 }
