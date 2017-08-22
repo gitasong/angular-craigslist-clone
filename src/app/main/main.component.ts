@@ -57,4 +57,8 @@ export class MainComponent implements OnInit {
          "http://www.zappos.com/images/z/2/6/3/1/9/2/263192-p-4x.jpg", "I was basically born in the wrong century, aside from science and equal rights, of course. I'm open and honest, I live on a farm, heat with wood, raise lots of my own food, including meat, and want to learn to hunt and fish. I'm an artist with an incredibly useless BFA and on a Celtic pagan spiritual path. I'm tall, curvy, messy and unapologetic. I love to hike with my dogs and swim in rivers and work in the garden, and read or watch a movie when I can make myself sit still long enough, which is rare, especially this time of year. I'm not much of a city person and prefer sitting by a fire to going to a bar. I've gotten away from my art, having become an entrepreneur last year, and am trying to re prioritize it. I am a practicing pagan, on a Druidic path, and part of a community which I love. I'm a former goth but it's still in my heart and my aesthetic is distinctly witchy. I'm looking for real connection with people I have things in common with, not those who view me as a novelty. I may sound like I take myself too seriously but I really, really don't. I'm usually the first one to laugh at myself. Politically I'm pretty far left and think the entire system is broken. Not much of a drinker, prefer cannabis these days and hate cigarette smoke. I do love a good dark beer.", "Hillsboro", 4),
       ];
 
+      goToDetailPage(clickedListing: Listing) {
+        this.router.navigate(['listings', clickedListing.id]);
+      };
+
 }
