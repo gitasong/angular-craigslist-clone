@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Listing } from '../listing.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main',
@@ -8,7 +9,7 @@ import { Listing } from '../listing.model';
 })
 export class MainComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
