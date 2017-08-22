@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Listing } from '../listing.model';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
-import { JobsService } from '../jobs.service';
+import { ForSaleService } from '../for-sale.service';
 
 @Component({
   selector: 'app-for-sale-detail',
@@ -16,12 +16,12 @@ export class ForSaleDetailComponent implements OnInit {
 
   constructor(private route: ActivatedRoute,
   private location: Location,
-  private jobsService: JobsService) { }
+  private forSaleService: ForSaleService) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
       this.listingId = parseInt(urlParameters['id']);
     });
-    this.listingToDisplay = this.ForSaleService.getForSaleById(this.listingId);
+    this.listingToDisplay = this.forSaleService.getForSaleById(this.listingId);
   }
 }
