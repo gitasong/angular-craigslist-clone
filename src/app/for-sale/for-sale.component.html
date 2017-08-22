@@ -1,5 +1,5 @@
 <h2>For Sale Listings</h2>
 
-<div *ngFor="let listing of forSale" (click)="goToForSalePage(listing)">
+<div *ngFor="let listing of forSale" (click)="goToForSaleDetailPage(listing)">
   <p>{{listing.title}} - {{listing.price}} - ({{listing.location}})</p>
 </div>
