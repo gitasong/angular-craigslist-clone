@@ -14,6 +14,11 @@ export class JobsComponent implements OnInit {
   constructor(private router: Router, private jobsService: JobsService) { }
 
   ngOnInit() {
+    this.jobs = this.jobsService.getJobs();
   }
+
+  goToJobsPage(clickedListing: Listing) {
+    this.router.navigate(['jobs', clickedListing.id]);
+  };
 
 }
