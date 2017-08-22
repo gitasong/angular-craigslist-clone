@@ -1,17 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { Listing } from '../listing.model';
 import { Router } from '@angular/router';
+import { ForSaleService } from '../for-sale.service';
 
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
-  styleUrls: ['./main.component.css']
+  styleUrls: ['./main.component.css'],
+  providers: [ForSaleService]
 })
 export class MainComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private forSaleService: ForSaleService) { }
 
   ngOnInit() {
+    this.forSale = this.forSaleService.getForSale();
   }
 
     forSale: Listing[];
