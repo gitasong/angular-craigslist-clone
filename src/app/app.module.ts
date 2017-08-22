@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { ForSaleComponent } from './for-sale/for-sale.component';
 import { JobsComponent } from './jobs/jobs.component';
+import { HousingComponent } from './housing/housing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     ForSaleComponent,
-    JobsComponent
+    JobsComponent,
+    HousingComponent
   ],
   imports: [
     BrowserModule,
