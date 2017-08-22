@@ -23,9 +23,9 @@
     <h3><a routerLink="housing">Housing</a></h3>
   </div>
   <div class="panel-body">
-    <p>
-      Housing listings go here.
-    </p>
+    <div *ngFor="let listing of housing">
+      <p>{{listing.title}} - {{listing.price}} - ({{listing.location}})</p>
+    </div>
   </div>
 </div>
 <div class="panel panel-default">
