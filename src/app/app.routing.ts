@@ -31,6 +31,22 @@ const appRoutes: Routes = [
   {
     path: 'listings/:id',
     component: ListingDetailComponent
+  },
+  {
+    path: 'for-sale/:id',
+    component: ForSaleComponent
+  },
+  {
+    path: 'jobs/:id',
+    component: JobsComponent
+  },
+  {
+    path: 'housing/:id',
+    component: HousingComponent
+  },
+  {
+    path: 'personals/:id',
+    component: PersonalsComponent
   }
 ];
 
