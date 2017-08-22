@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ForSaleService } from '../for-sale.service';
 
 @Component({
   selector: 'app-for-sale',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ForSaleComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router, private forSaleService: ForSaleService) { }
 
   ngOnInit() {
   }
