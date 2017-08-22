@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { ForSaleService } from '../for-sale.service';
 import { JobsService } from '../jobs.service';
 import { HousingService } from '../housing.service';
-impoer { PersonalsService } from '../personals.service';
+import { PersonalsService } from '../personals.service';
 
 @Component({
   selector: 'app-main',
