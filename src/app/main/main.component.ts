@@ -62,4 +62,20 @@ export class MainComponent implements OnInit {
         this.router.navigate(['listings', clickedListing.id]);
       };
 
+      goToForSalePage(clickedListing: Listing) {
+        this.router.navigate(['for-sale', clickedListing.id]);
+      };
+
+      goToJobsPage(clickedListing: Listing) {
+        this.router.navigate(['jobs', clickedListing.id]);
+      };
+
+      goToHousingPage(clickedListing: Listing) {
+        this.router.navigate(['housing', clickedListing.id]);
+      };
+
+      goToPersonalsPage(clickedListing: Listing) {
+        this.router.navigate(['personals', clickedListing.id]);
+      };
+
 }
