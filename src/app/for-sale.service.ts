@@ -11,4 +11,12 @@ export class ForSaleService {
     return FORSALE;
   }
 
+  getForSaleById(forSaleId: number){
+    for (var i = 0; i <= FORSALE.length - 1; i++) {
+      if (FORSALE[i].id === forSaleId) {
+        return FORSALE[i];
+      }
+    }
+  }
+
 }
