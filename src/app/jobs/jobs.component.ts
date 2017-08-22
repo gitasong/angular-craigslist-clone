@@ -10,6 +10,7 @@ import { JobsService } from '../jobs.service';
   providers: [JobsService]
 })
 export class JobsComponent implements OnInit {
+  jobs: Listing[];
 
   constructor(private router: Router, private jobsService: JobsService) { }
 
