@@ -18,8 +18,8 @@ export class JobsComponent implements OnInit {
     this.jobs = this.jobsService.getJobs();
   }
 
-  goToJobsPage(clickedListing: Listing) {
-    this.router.navigate(['jobs', clickedListing.id]);
+  goToJobDetailPage(clickedListing: Listing) {
+    this.router.navigate(['job-detail', clickedListing.id]);
   };
 
 }
