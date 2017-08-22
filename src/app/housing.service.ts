@@ -5,8 +5,9 @@ import { HOUSING } from './housing-data';
 @Injectable()
 export class HousingService {
 
-  constructor() {
+  constructor() { }
+
+  getHousing() {
     return HOUSING;
   }
-
 }
