@@ -2,6 +2,7 @@ import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MainComponent } from './main/main.component';
 import { ForSaleComponent } from './for-sale/for-sale.component';
+import { JobsComponent } from './jobs/jobs.component';
 
 const appRoutes: Routes = [
   {
@@ -11,6 +12,10 @@ const appRoutes: Routes = [
   {
     path: 'for-sale',
     component: ForSaleComponent
+  },
+  {
+    path: 'jobs',
+    component: JobsComponent
   }
 ];
 
