@@ -6,6 +6,7 @@ import { JobsComponent } from './jobs/jobs.component';
 import { HousingComponent } from './housing/housing.component';
 import { PersonalsComponent } from './personals/personals.component';
 import { JobDetailComponent } from './job-detail/job-detail.component';
+import { ForSaleDetailComponent } from './for-sale-detail/for-sale-detail.component';
 
 const appRoutes: Routes = [
   {
@@ -47,6 +48,10 @@ const appRoutes: Routes = [
   {
     path: 'job-detail/:id',
     component: JobDetailComponent
+  },
+  {
+    path: 'for-sale-detail/:id',
+    component: ForSaleDetailComponent
   }
 ];
 
