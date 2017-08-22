@@ -1,3 +1,4 @@
-<p>
-  jobs works!
-</p>
+<h2>Jobs Listings</h2>
+<div *ngFor="let listing of jobs" (click)="goToJobsPage(listing)">
+  <p>{{listing.title}} - {{listing.price}} - ({{listing.location}})</p>
+</div>

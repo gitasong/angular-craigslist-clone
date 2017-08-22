@@ -1,3 +1,5 @@
-<p>
-  personals works!
-</p>
+<h2>Personals Listings</h2>
+
+<div *ngFor="let listing of personals" (click)="goToPersonalsPage(listing)">
+  <p>{{listing.title}} - {{listing.price}} - ({{listing.location}})</p>
+</div>

@@ -1,3 +1,4 @@
-<p>
-  housing works!
-</p>
+<h2>Housing Listings</h2>
+<div *ngFor="let listing of housing" (click)="goToHousingPage(listing)">
+  <p>{{listing.title}} - {{listing.price}} - ({{listing.location}})</p>
+</div>
