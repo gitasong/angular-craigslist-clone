@@ -10,6 +10,7 @@ import { ForSaleComponent } from './for-sale/for-sale.component';
 import { JobsComponent } from './jobs/jobs.component';
 import { HousingComponent } from './housing/housing.component';
 import { PersonalsComponent } from './personals/personals.component';
+import { JobDetailComponent } from './job-detail/job-detail.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PersonalsComponent } from './personals/personals.component';
     ForSaleComponent,
     JobsComponent,
     HousingComponent,
-    PersonalsComponent
+    PersonalsComponent,
+    JobDetailComponent
   ],
   imports: [
     BrowserModule,
