@@ -4,21 +4,23 @@ import { Router } from '@angular/router';
 import { ForSaleService } from '../for-sale.service';
 import { JobsService } from '../jobs.service';
 import { HousingService } from '../housing.service';
+impoer { PersonalsService } from '../personals.service';
 
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.css'],
-  providers: [ForSaleService, JobsService, HousingService]
+  providers: [ForSaleService, JobsService, HousingService, PersonalsService]
 })
 export class MainComponent implements OnInit {
 
-  constructor(private router: Router, private forSaleService: ForSaleService, private jobsService: JobsService, private housingService: HousingService) { }
+  constructor(private router: Router, private forSaleService: ForSaleService, private jobsService: JobsService, private housingService: HousingService, private personalsService: PersonalsService) { }
 
   ngOnInit() {
     this.forSale = this.forSaleService.getForSale();
     this.jobs = this.jobsService.getJobs();
     this.housing = this.housingService.getHousing();
+    this.personals = this.personalsService.getPersonals();
   }
 
     forSale: Listing[];
