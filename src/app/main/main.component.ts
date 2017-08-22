@@ -15,6 +15,7 @@ export class MainComponent implements OnInit {
 
   ngOnInit() {
     this.forSale = this.forSaleService.getForSale();
+    this.jobs = this.jobsService.getJobs();
   }
 
     forSale: Listing[];
