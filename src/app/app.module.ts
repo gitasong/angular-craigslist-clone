@@ -6,11 +6,13 @@ import { routing } from './app.routing';
 
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
+import { ForSaleComponent } from './for-sale/for-sale.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent
+    MainComponent,
+    ForSaleComponent
   ],
   imports: [
     BrowserModule,
