@@ -18,7 +18,7 @@ export class ForSaleComponent implements OnInit {
     this.forSale = this.forSaleService.getForSale();
   }
 
-  goToForSalePage(clickedListing: Listing) {
-    this.router.navigate(['for-sale', clickedListing.id]);
+  goToForSaleDetailPage(clickedListing: Listing) {
+    this.router.navigate(['for-sale-detail', clickedListing.id]);
   };
 }
